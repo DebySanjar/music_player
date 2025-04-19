@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008080"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_image"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:elevation="@dimen/_24sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+
+    <com.codezone.musicplayersimple.splash.TypeWriterTextView
+        android:id="@+id/typewriterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:letterSpacing="0.06"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFBFB"
+        android:textStyle="bold"
+        tools:ignore="MissingClass" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.codezone.musicplayersimple.splash.TypeWriterTextView
+        android:id="@+id/creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="Creator by  Abduganiyev Sanjarbek"
+        android:textColor="#BDBCBC" />
+</LinearLayout>
